@@ -3,7 +3,7 @@
 int main()
 {
     int n,s=0,i;
-
+//----------------------------------------------------------------------------------------------------------------------------------
 //(1) program to calculate sum of first N natural numbers    
     printf("Enter a value of N for calculate sum on N numbers ");
     scanf("%d",&n);
@@ -12,7 +12,7 @@ int main()
         s=s+i;
     }
     printf("Sum is %d",s);
-  
+//---------------------------------------------------------------------------------------------------------------------------------- 
 //(2) program to calculate sum of first N even natural numbers
     printf("\nEnter a value of N for calculate sum of first N even natural numbers ");
     scanf("%d",&n);
@@ -22,7 +22,7 @@ int main()
         s=s+2*i;
     }
     printf("\nSum of first %d even natural numbers is %d",n,s);
-
+//----------------------------------------------------------------------------------------------------------------------------------
 //(3) program to calculate sum of first N odd natural numbers
     printf("\nEnter a value of N for calculate sum of first N odd natural numbers ");
     scanf("%d",&n);
@@ -32,7 +32,7 @@ int main()
         s = s + 2*i+1 ;
     }
     printf("\nSum of first %d odd natural numbers is %d",n,s);
-
+//----------------------------------------------------------------------------------------------------------------------------------
 //(4)program to calculate sum of squares of first N natural numbers
     printf("\nEnter a value of N for calculate sum of squares of first N natural numbers ");
     scanf("%d",&n);
@@ -43,7 +43,7 @@ int main()
     }
     printf("\nSum of square of first %d  natural numbers is %d",n,s);
 
-
+//----------------------------------------------------------------------------------------------------------------------------------
 //(5)program to calculate sum of cubes of first N natural numbers
     printf("\nEnter a value of N for calculate sum of cubes of first N natural numbers ");
     scanf("%d",&n);
@@ -53,7 +53,7 @@ int main()
         s = s + i*i*i ;
     }
     printf("\nSum of cubes of first %d natural numbers is %d",n,s);
-
+//----------------------------------------------------------------------------------------------------------------------------------
 //(6) program to calculate factorial of a number
     int fact=1;
     printf("\nEnter a number to find its factorial ");
@@ -65,7 +65,7 @@ int main()
         i++;
     }
     printf("Factorial of %d is %d",n,fact);
-
+//----------------------------------------------------------------------------------------------------------------------------------
 //(7) program to count digits in a given number
     int count=0;
     printf("\nEnter a number ");
@@ -80,23 +80,27 @@ int main()
         printf("Number of digit is %d",count);
     }
 
-    
+//----------------------------------------------------------------------------------------------------------------------------------    
 //(8) program to check whether a given number is a Prime number or not
-    int flag=0;
+    
     printf("\nEnter a number to check whether it is prime number or not ");
     scanf("%d",&n);
-    for (int i=2;i<n/2;i++)
-    {   
-        if(n%i==0) 
+    for (int i=2;i<=n;i++)
+    {
+        if(n%i==0)  
         {
-            flag=1;
+            printf("Not Prime");
             break;
         }
+        else 
+        {
+            printf("Prime");
+            break;
+        }    
     }
-   if(flag==1)  printf("Not Prime Number");
-   else     printf("Prime Number");
 
 
+//----------------------------------------------------------------------------------------------------------------------------------
 
 //(9) program to calculate LCM of two numbers
     int a,b;
@@ -110,13 +114,11 @@ int main()
             break;
         }    
     }
-
+//----------------------------------------------------------------------------------------------------------------------------------
 //(10) program to reverse a given number
     int rem,rev=0;
-
     printf("\nEnter a number to reveser it ");
     scanf("%d",&n);
-
     while (n!=0)
     {
         rem = n%10;
@@ -125,12 +127,6 @@ int main()
             
     }
     printf("\nReverse is %d",rev);
-    
-    
-
-
-
-
 
     return 0;
 }
