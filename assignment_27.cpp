@@ -263,10 +263,6 @@ class Matrix
 
 
 
-
-
-
-
 void add(Complex X,Complex Y)
 {   
     (X+Y).print();
@@ -276,34 +272,23 @@ void add(Complex X,Complex Y)
 
 int main()
 {   
-    /*
+   // Complex Class
     Complex c1(3,4),c2(4,5),c3,c4,c5,c6(1,1),c7(1,1);
-
     c3=c1+c2;       c3.print();
     c4=c3-c1;       c4.print();
     c5=c1*c2;       c5.print();
     c6==c7;
-
     Complex X(6,8) , Y(4,4);
     (++X).print();   (X++).print();  X.print();
     cout<<endl;
     (--Y).print();   (Y--).print();  Y.print();
-
     Complex A(3,4),B(5,6);
     add(A,B);
 
+    
     Numbers N1(5);
     -N1;
-
-   
-
-    Matrix M1;
-    M1.print();
-    cout<<endl;
-    (-M1).print();;
-    cout<<endl;
-
-    
+    // Time Class
     Time t1,t2;
     cin>>t1;
     cin>>t2;
@@ -319,7 +304,7 @@ int main()
         {
             cout<<endl<<"Times are not equal"<<endl;
         }
-
+       //Matrix Class
     Matrix M1,M2;
     M1.init();  M1.print();
     M2.init();  M2.print();
@@ -329,7 +314,7 @@ int main()
 
 
    
-    */
+   
    
 
    
